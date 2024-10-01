@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f2f5;
+}
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.sports_div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s;
+    
+}
+
+.sports_div:hover {
+    transform: scale(1.05);
+}
+
+.sports_div h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.sports_div p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.sports_div a {
+    color: #333;
+    text-decoration: none;
+}
+
+.sports_div a:hover h2 {
+    color: #ffdd57;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sports_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sports_div {
+    width: 45%; /* თითოეული დივი იღებს 45% სიგანეს, რომ ორ-ორად განლაგდეს */
+    margin: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .sports_div {
+        width: 100%; /* მობილურ მოწყობილობებზე თითო დივი ერთ ხაზზე განლაგდება */
+    }
+}
+
+
+
+
+
