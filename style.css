@@ -102,6 +102,9 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
 }
+.football_img{
+    margin-left: 10px;
+}
 
 .sports_div {
     width: 45%; /* თითოეული დივი იღებს 45% სიგანეს, რომ ორ-ორად განლაგდეს */
