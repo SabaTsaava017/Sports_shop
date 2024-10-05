@@ -60,7 +60,7 @@ section {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin: 10px;
     transition: transform 0.3s;
-    
+    position: relative;
 }
 
 .sports_div:hover {
@@ -117,6 +117,7 @@ footer {
         width: 100%; /* მობილურ მოწყობილობებზე თითო დივი ერთ ხაზზე განლაგდება */
     }
 }
+
 
 
 
