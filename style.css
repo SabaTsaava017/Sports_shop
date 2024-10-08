@@ -10,10 +10,6 @@ body {
     text-decoration: none;
     color:#007bff ;
 }
-.name{
-    text-decoration: none;
-    color:#007bff ;
-}
 header {
     background-color: #007bff;
     color: #fff;
@@ -60,10 +56,8 @@ section {
 
 .sports_div {
     position: relative;
-    position: relative;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 1px;
     border-radius: 1px;
     padding: 20px;
     text-align: center;
@@ -87,21 +81,8 @@ section {
     max-width: 100%;
     height: auto;
     transition: transform 0.3s ease, filter 0.3s ease;
-.image {
-    position: relative;
-    overflow: hidden;
 }
 
-.image img {
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.image:hover img {
-    filter: blur(4px);
-    transform: scale(1.1);
 .image:hover img {
     filter: blur(4px);
     transform: scale(1.1);
@@ -118,21 +99,8 @@ section {
     padding: 10px;
     opacity: 0;
     transition: opacity 0.3s ease;
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
 }
 
-.sports_div:hover .overlay {
-    opacity: 1;
 .sports_div:hover .overlay {
     opacity: 1;
 }
@@ -165,11 +133,7 @@ footer {
 .rugby_img{
     width: 650px;
 }
-.rugby_img{
-    width: 650px;
-}
 
-/* Media Queries for Mobile */
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
     nav ul li {
@@ -177,13 +141,7 @@ footer {
         margin: 5px 0;
     }
     
-    nav ul li {
-        display: block;
-        margin: 5px 0;
-    }
-    
     .sports_div {
-        flex: 1 1 calc(100% - 20px);
         flex: 1 1 calc(100% - 20px);
     }
 }
