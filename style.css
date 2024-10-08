@@ -134,12 +134,17 @@ footer {
     width: 650px;
 }
 
+/* Media Queries for Mobile */
 @media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    
     .sports_div {
-        width: 100%; /* მობილურ მოწყობილობებზე თითო დივი ერთ ხაზზე განლაგდება */
+        flex: 1 1 calc(100% - 20px);
     }
 }
-
 
 
 
