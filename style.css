@@ -6,6 +6,10 @@ body {
     box-sizing: border-box;
     background-color: #f0f2f5;
 }
+.name{
+    text-decoration: none;
+    color:#007bff ;
+}
 header {
     background-color: #007bff;
     color: #fff;
@@ -51,39 +55,54 @@ section {
 }
 
 .sports_div {
+    position: relative;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 1px;
     padding: 20px;
     text-align: center;
     width: 30%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     margin: 10px;
     transition: transform 0.3s;
-    position: relative;
 }
 
 .sports_div:hover {
     transform: scale(1.05);
 }
 
-.sports_div h2 {
-    margin-top: 0;
-    color: #007bff;
+.image {
+    position: relative;
+    overflow: hidden;
 }
 
-.sports_div p {
-    margin: 10px 0;
-    color: #555;
+.image img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.sports_div a {
-    color: #333;
-    text-decoration: none;
+.image:hover img {
+    filter: blur(4px);
+    transform: scale(1.1);
 }
 
-.sports_div a:hover h2 {
-    color: #ffdd57;
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sports_div:hover .overlay {
+    opacity: 1;
 }
 
 footer {
@@ -111,15 +130,18 @@ footer {
     margin: 10px;
     text-align: center;
 }
-
-@media (max-width: 768px) {
-    .sports_div {
-        width: 100%; /* მობილურ მოწყობილობებზე თითო დივი ერთ ხაზზე განლაგდება */
-    }
+.rugby_img{
+    width: 650px;
 }
 
-
-
-
-
-
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    .sports_div {
+        flex: 1 1 calc(100% - 20px);
+    }
+}
