@@ -4,14 +4,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f2f5;
+    background-color: white;
 }
 .name{
     text-decoration: none;
     color:#007bff ;
 }
 header {
-    background-color: #007bff;
+    background-color: blue;
     color: #fff;
     padding: 15px 0;
 }
@@ -56,7 +56,7 @@ section {
 
 .sports_div {
     position: relative;
-    background-color: #fff;
+    background-color: white;
     border: 1px solid #ddd;
     border-radius: 1px;
     padding: 20px;
