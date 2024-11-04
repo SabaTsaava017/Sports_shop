@@ -26,69 +26,81 @@
         <div class="T_shirt_product">
             <p class="club_name">NIKE</p>
             <img src="./imige/basketball shoes (1).jpeg" alt="" class="T_shirt">
-            <p class="product_price">179₾</p>
+            <p class="product_price" onclick="addToTotal(159)">159₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">NIKE</p>
             <img src="./imige/basketball shoes (2).webp" alt="" class="T_shirt">
-            <p class="product_price">159₾</p>
+            <p class="product_price" onclick="addToTotal(159)">159₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">NIKE</p>
             <img src="./imige/basketball shoes (3).webp" alt="" class="T_shirt">
-            <p class="product_price">129₾</p>
+            <p class="product_price" onclick="addToTotal(129)">129₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">NIKE</p>
             <img src="./imige/basketball shoes (4).jpeg" alt="" class="T_shirt">
-            <p class="product_price">199₾</p>
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">NIKE</p>
             <img src="./imige/basketball shoes (5).jpg" alt="" class="T_shirt">
-            <p class="product_price">159₾</p>
+            <p class="product_price" onclick="addToTotal(159)">159₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">NIKE</p>
             <img src="./imige/basketball shoes (1).jpeg" alt="" class="T_shirt">
-            <p class="product_price">119₾</p>
+            <p class="product_price" onclick="addToTotal(119)">119₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">NIKE</p>
             <img src="./imige/basketball shoes (2).webp" alt="" class="T_shirt">
-            <p class="product_price">259₾</p>
+            <p class="product_price" onclick="addToTotal(259)">259₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">NIKE</p>
             <img src="./imige/basketball shoes (3).webp" alt="" class="T_shirt">
-            <p class="product_price">139₾</p>
+            <p class="product_price" onclick="addToTotal(139)">139₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">NIKE</p>
             <img src="./imige/basketball shoes (4).jpeg" alt="" class="T_shirt">
-            <p class="product_price">129₾</p>
+            <p class="product_price" onclick="addToTotal(129)">129₾</p>
         </div>
         
         <div class="T_shirt_product">
             <p class="club_name">NIKE</p>
             <img src="./imige/basketball shoes (5).jpg" alt="" class="T_shirt">
-            <p class="product_price">119₾</p>
+            <p class="product_price" onclick="addToTotal(119)">119₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">NIKE</p>
             <img src="./imige/basketball shoes (1).jpeg" alt="" class="T_shirt">
-            <p class="product_price">149₾</p>
+            <p class="product_price" onclick="addToTotal(149)">149₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">NIKE</p>
             <img src="./imige/basketball shoes (2).webp" alt="" class="T_shirt">
-            <p class="product_price">199₾</p>
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
         </div>
+    </div>
+
+    <div class="total-box">
+        <h2>ჯამი: <span id="total">0</span>₾</h2>
     </div>
 
     <footer>
         <p>© 2024 ჩვენი კომპანია</p>
     </footer>
+
+    <script>
+        let total = 0;
+        function addToTotal(price) {
+            total += price;
+            document.getElementById('total').innerText = total;
+        }
+    </script>
 
 </body>
 </html>
