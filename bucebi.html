@@ -25,66 +25,81 @@
     <div class="boots_product">
         <p class="boots_name">Nike</p>
         <img src="./imige/300ef-16624457258619-1920.webp" alt="boots" class="boots">
-        <p class="boots_price">250₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="boots_product">
         <p class="boots_name">Nike</p>
         <img src="./imige/1dd341bc-7167-4a74-8859-b74783d3179a_1.fe89dff351ed82231a795b4487bf7535.webp" alt="boots" class="boots">
-        <p class="boots_price">250₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="boots_product">
         <p class="boots_name">Nike</p>
         <img src="./imige/a1-nike-mercurial-dream-speed-min.jpg" alt="boots" class="boots">
-        <p class="boots_price">250₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="boots_product">
         <p class="boots_name">Nike</p>
         <img src="./imige/Nike-Superfly-7-Safari-CR7-Youth.webp" alt="boots" class="boots">
-        <p class="boots_price">250₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="boots_product">
         <p class="boots_name">ADDIDAS</p>
         <img src="./imige/th (6).jpg" alt="boots" class="boots">
-        <p class="boots_price">250₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="boots_product">
         <p class="boots_name">PUMA</p>
         <img src="./imige/742d82a1-16f8-4d0c-b2cb-de84a697dde5_1.7d3652d08ec55c9f2e61657ac30ac01a.webp" alt="boots" class="boots">
-        <p class="boots_price">250₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="boots_product">
         <p class="boots_name">Nike</p>
         <img src="./imige/300ef-16624457258619-1920.webp" alt="boots" class="boots">
-        <p class="boots_price">250₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="boots_product">
         <p class="boots_name">Nike</p>
         <img src="./imige/a1-nike-mercurial-dream-speed-min.jpg" alt="boots" class="boots">
-        <p class="boots_price">250₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="boots_product">
         <p class="boots_name">ADDIDAS</p>
         <img src="./imige/th (6).jpg" alt="boots" class="boots">
-        <p class="boots_price">250₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="boots_product">
         <p class="boots_name">PUMA</p>
         <img src="./imige/742d82a1-16f8-4d0c-b2cb-de84a697dde5_1.7d3652d08ec55c9f2e61657ac30ac01a.webp" alt="boots" class="boots">
-        <p class="boots_price">250₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="boots_product">
         <p class="boots_name">Nike</p>
         <img src="./imige/Nike-Superfly-7-Safari-CR7-Youth.webp" alt="boots" class="boots">
-        <p class="boots_price">250₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="boots_product">
         <p class="boots_name">Nike</p>
         <img src="./imige/1dd341bc-7167-4a74-8859-b74783d3179a_1.fe89dff351ed82231a795b4487bf7535.webp" alt="boots" class="boots">
-        <p class="boots_price">250₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
 </div>
+
+<div class="total-box">
+    <h2>ჯამი: <span id="total">0</span>₾</h2>
+</div>
+
     <footer>
         <p>© 2024 ჩვენი კომპანია</p>
     </footer>
+
+    <script>
+        let total = 0;
+        function addToTotal(price) {
+            total += price;
+            document.getElementById('total').innerText = total;
+        }
+    </script>
+
+
 </body>
 </html>
