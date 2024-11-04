@@ -26,69 +26,81 @@
         <div class="T_shirt_product">
             <p class="club_name">BULLS</p>
             <img src="./imige/chicago-bulls-michael-jordan-1995-home-authentic-jersey-by-mitchell-and-ness-mens_ss4_p-12007110+u-k4t2gusk88p3t6ts7lqe+v-ff696c7276e0416bb1c5593a373bff35.avif" alt="" class="T_shirt">
-            <p class="product_price">159₾</p>
+            <p class="product_price" onclick="addToTotal(119)">119₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">MIAMI</p>
             <img src="./imige/miami-heat-nike-city-edition-swingman-jersey-jimmy-butler-mens_ss4_p-12015702+u-y3lrx21zqy85tgziyush+v-971603749c424aa982dafd5557072868.avif" alt="" class="T_shirt">
-            <p class="product_price">159₾</p>
+            <p class="product_price" onclick="addToTotal(129)">129₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">CELTIC</p>
             <img src="./imige/th (11).jpg" alt="" class="T_shirt">
-            <p class="product_price">159₾</p>
+            <p class="product_price" onclick="addToTotal(139)">139₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">GOLDEN STATE</p>
             <img src="./imige/thumb.avif" alt="" class="T_shirt">
-            <p class="product_price">159₾</p>
+            <p class="product_price" onclick="addToTotal(99)">99₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">Man City</p>
             <img src="./imige/chicago-bulls-michael-jordan-1995-home-authentic-jersey-by-mitchell-and-ness-mens_ss4_p-12007110+u-k4t2gusk88p3t6ts7lqe+v-ff696c7276e0416bb1c5593a373bff35.avif" alt="" class="T_shirt">
-            <p class="product_price">159₾</p>
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">Dortmund</p>
             <img src="./imige/miami-heat-nike-city-edition-swingman-jersey-jimmy-butler-mens_ss4_p-12015702+u-y3lrx21zqy85tgziyush+v-971603749c424aa982dafd5557072868.avif" alt="" class="T_shirt">
-            <p class="product_price">159₾</p>
+            <p class="product_price" onclick="addToTotal(85)">85₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">CELTIC</p>
             <img src="./imige/th (11).jpg" alt="" class="T_shirt">
-            <p class="product_price">159₾</p>
+            <p class="product_price" onclick="addToTotal(75)">75₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">GOLDEN STATE</p>
             <img src="./imige/thumb.avif" alt="" class="T_shirt">
-            <p class="product_price">159₾</p>
+            <p class="product_price" onclick="addToTotal(105)">105₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">BULLS</p>
             <img src="./imige/chicago-bulls-michael-jordan-1995-home-authentic-jersey-by-mitchell-and-ness-mens_ss4_p-12007110+u-k4t2gusk88p3t6ts7lqe+v-ff696c7276e0416bb1c5593a373bff35.avif" alt="" class="T_shirt">
-            <p class="product_price">159₾</p>
+            <p class="product_price" onclick="addToTotal(125)">125₾</p>
         </div>
         
         <div class="T_shirt_product">
             <p class="club_name">GOLDEN STATE</p>
             <img src="./imige/thumb.avif" alt="" class="T_shirt">
-            <p class="product_price">159₾</p>
+            <p class="product_price" onclick="addToTotal(150)">150₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">MIAMI</p>
             <img src="./imige/miami-heat-nike-city-edition-swingman-jersey-jimmy-butler-mens_ss4_p-12015702+u-y3lrx21zqy85tgziyush+v-971603749c424aa982dafd5557072868.avif" alt="" class="T_shirt">
-            <p class="product_price">159₾</p>
+            <p class="product_price" onclick="addToTotal(135)">135₾</p>
         </div>
         <div class="T_shirt_product">
             <p class="club_name">CELTIC</p>
             <img src="./imige/th (11).jpg" alt="" class="T_shirt">
-            <p class="product_price">159₾</p>
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
         </div>
+    </div>
+
+    <div class="total-box">
+        <h2>ჯამი: <span id="total">0</span>₾</h2>
     </div>
 
     <footer>
         <p>© 2024 ჩვენი კომპანია</p>
     </footer>
+
+    <script>
+        let total = 0;
+        function addToTotal(price) {
+            total += price;
+            document.getElementById('total').innerText = total;
+        }
+    </script>
 
 </body>
 </html>
