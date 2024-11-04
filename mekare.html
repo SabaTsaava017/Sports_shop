@@ -25,56 +25,68 @@
 <div class="product_div">
     <div class="product">
         <img src="./imige/mk1.jpg" alt="ball" class="ball">
-        <p class="product_price">119₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <img src="./imige/mk2.jpg" alt="ball" class="ball">
-        <p class="product_price">115₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <img src="./imige/mk3.jpg" alt="ball" class="ball">
-        <p class="product_price">85₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <img src="./imige/mk4.jpg" alt="ball" class="ball">
-        <p class="product_price">199₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <img src="./imige/mk5.jpg" alt="ball" class="ball">
-        <p class="product_price">55₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <img src="./imige/mk1.jpg" alt="ball" class="ball">
-        <p class="product_price">99₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <img src="./imige/mk3.jpg" alt="ball" class="ball">
-        <p class="product_price">140₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <img src="./imige/mk1.jpg" alt="ball" class="ball">
-        <p class="product_price">119₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <img src="./imige/mk1.jpg" alt="ball" class="ball">
-        <p class="product_price">99₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <img src="./imige/mk6.jpg" alt="ball" class="ball">
-        <p class="product_price">115₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <img src="./imige/mk2.jpg" alt="ball" class="ball">
-        <p class="product_price">115₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <img src="./imige/mk6.jpg" alt="ball" class="ball">
-        <p class="product_price">115₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
+</div>
+
+<div class="total-box">
+    <h2>ჯამი: <span id="total">0</span>₾</h2>
 </div>
 
 <footer>
     <p>© 2024 ჩვენი კომპანია</p>
 </footer>
+
+<script>
+    let total = 0;
+    function addToTotal(price) {
+        total += price;
+        document.getElementById('total').innerText = total;
+    }
+</script>
 </body>
 </html>
