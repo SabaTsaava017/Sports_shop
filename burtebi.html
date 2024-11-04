@@ -26,67 +26,79 @@
     <div class="product">
         <p class="ball_name">SELECT</p>
         <img src="./imige/rjrzLI8GleulkICVNwE4QijyagpJK2sO.jpg" alt="ball" class="ball">
-        <p class="product_price">119₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <p class="ball_name">TRAMONDI</p>
         <img src="./imige/th.jpg" alt="ball" class="ball">
-        <p class="product_price">115₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <p class="ball_name">MOLTEN</p>
         <img src="./imige/th (1).jpg" alt="ball" class="ball">
-        <p class="product_price">85₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <p class="ball_name">UEFA</p>
         <img src="./imige/th (2).jpg" alt="ball" class="ball">
-        <p class="product_price">199₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <p class="ball_name">WEIBITE</p>
         <img src="./imige/th (3).jpg" alt="ball" class="ball">
-        <p class="product_price">55₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <p class="ball_name">NIKE</p>
         <img src="./imige/th (4).jpg" alt="ball" class="ball">
-        <p class="product_price">99₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <p class="ball_name">NIKE</p>
         <img src="./imige/th (5).jpg" alt="ball" class="ball">
-        <p class="product_price">140₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <p class="ball_name">SELECT</p>
         <img src="./imige/rjrzLI8GleulkICVNwE4QijyagpJK2sO.jpg" alt="ball" class="ball">
-        <p class="product_price">119₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <p class="ball_name">MOLTEN</p>
         <img src="./imige/th (1).jpg" alt="ball" class="ball">
-        <p class="product_price">85₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <p class="ball_name">NIKE</p>
         <img src="./imige/th (4).jpg" alt="ball" class="ball">
-        <p class="product_price">99₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <p class="ball_name">SELECT</p>
         <img src="./imige/rjrzLI8GleulkICVNwE4QijyagpJK2sO.jpg" alt="ball" class="ball">
-        <p class="product_price">119₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
     <div class="product">
         <p class="ball_name">TRAMONDI</p>
         <img src="./imige/th.jpg" alt="ball" class="ball">
-        <p class="product_price">115₾</p>
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
     </div>
+</div>
+
+<div class="total-box">
+    <h2>ჯამი: <span id="total">0</span>₾</h2>
 </div>
 
 <footer>
     <p>© 2024 ჩვენი კომპანია</p>
 </footer>
+
+<script>
+    let total = 0;
+    function addToTotal(price) {
+        total += price;
+        document.getElementById('total').innerText = total;
+    }
+</script>
 </body>
 </html>
