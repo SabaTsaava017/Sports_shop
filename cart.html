@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კალათა</title>
+    <link rel="stylesheet" href="formebi.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="services.html">სერვისები</a></li>
+                <li><a href="registration.html">რეგისტრაცია</a></li>
+                
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="goToCart()">
+            🛒 <span id="cart-count">0</span> 
+        </div>
+    </header>
+
+    <main>
+        <div class="cart">
+            <h2>კალათა</h2>
+            <ul id="cartItems"></ul>
+            <div class="total-box">
+                ჯამი: <span id="total">0</span>₾
+            </div>
+            <div class="cart-actions">
+                <button class="clear-cart" onclick="clearCart()">კალათის გასუფთავება</button>
+                <button class="checkout" onclick="checkout()">
+                    <i class="fas fa-shopping-cart"></i> შეკვეთის გაკეთება
+                </button>
+            </div>
+        </div>
+        
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 ჩვენი კომპანია</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
