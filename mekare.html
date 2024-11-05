@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="formebi.css">
 </head>
 <body>
+    <div class="notification" id="notification"></div>
     <header>
         <nav>
             <ul>
@@ -16,77 +17,83 @@
                 <li><a href="registration.html">რეგისტრაცია</a></li>
             </ul>
         </nav>
+        <div class="cart-icon" onclick="goToCart()">
+            🛒 <span id="cart-count">0</span> <!-- კალათის რაოდენობის მონიტორინგი -->
+        </div>
     </header>
     <main>
         <h1>კეთილი იყოს თქვენი მობრძანება ჩვენს სპორტულ მაღაზიაში</h1>
     </main>
 
-<h2 class="NAMES">მეკარის ხელთათმანები</h2>
-<div class="product_div">
-    <div class="product">
-        <img src="./imige/mk1.jpg" alt="ball" class="ball">
-        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+    <h2 class="NAMES">მეკარის ხელთათმანები</h2>
+    <div class="product_div">
+        <div class="product">
+            <img src="./imige/mk1.jpg" alt="ball" class="ball">
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
+            <button class="add-to-cart-button" onclick="addToCart('Product 1', 199, './imige/mk1.jpg')">🛒კალათაში დამატება</button>
+        </div>
+        <div class="product">
+            <img src="./imige/mk2.jpg" alt="ball" class="ball">
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
+            <button class="add-to-cart-button" onclick="addToCart('Product 2', 199, './imige/mk2.jpg')">🛒კალათაში დამატება</button>
+        </div>
+        <div class="product">
+            <img src="./imige/mk3.jpg" alt="ball" class="ball">
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
+            <button class="add-to-cart-button" onclick="addToCart('Product 3', 199, './imige/mk3.jpg')">🛒კალათაში დამატება</button>
+        </div>
+        <div class="product">
+            <img src="./imige/mk4.jpg" alt="ball" class="ball">
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
+            <button class="add-to-cart-button" onclick="addToCart('Product 4', 199, './imige/mk4.jpg')">🛒კალათაში დამატება</button>
+        </div>
+        <div class="product">
+            <img src="./imige/mk5.jpg" alt="ball" class="ball">
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
+            <button class="add-to-cart-button" onclick="addToCart('Product 5', 199, './imige/mk5.jpg')">🛒კალათაში დამატება</button>
+        </div>
+        <div class="product">
+            <img src="./imige/mk1.jpg" alt="ball" class="ball">
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
+            <button class="add-to-cart-button" onclick="addToCart('Product 6', 199, './imige/mk1.jpg')">🛒კალათაში დამატება</button>
+        </div>
+        <div class="product">
+            <img src="./imige/mk3.jpg" alt="ball" class="ball">
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
+            <button class="add-to-cart-button" onclick="addToCart('Product 7', 199, './imige/mk3.jpg')">🛒კალათაში დამატება</button>
+        </div>
+        <div class="product">
+            <img src="./imige/mk1.jpg" alt="ball" class="ball">
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
+            <button class="add-to-cart-button" onclick="addToCart('Product 8', 199, './imige/mk1.jpg')">🛒კალათაში დამატება</button>
+        </div>
+        <div class="product">
+            <img src="./imige/mk1.jpg" alt="ball" class="ball">
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
+            <button class="add-to-cart-button" onclick="addToCart('Product 9', 199, './imige/mk1.jpg')">🛒კალათაში დამატება</button>
+        </div>
+        <div class="product">
+            <img src="./imige/mk6.jpg" alt="ball" class="ball">
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
+            <button class="add-to-cart-button" onclick="addToCart('Product 10', 199, './imige/mk6.jpg')">🛒კალათაში დამატება</button>
+        </div>
+        <div class="product">
+            <img src="./imige/mk2.jpg" alt="ball" class="ball">
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
+            <button class="add-to-cart-button" onclick="addToCart('Product 11', 199, './imige/mk2.jpg')">🛒კალათაში დამატება</button>
+        </div>
+        <div class="product">
+            <img src="./imige/mk6.jpg" alt="ball" class="ball">
+            <p class="product_price" onclick="addToTotal(199)">199₾</p>
+            <button class="add-to-cart-button" onclick="addToCart('Product 12', 199, './imige/mk6.jpg')">🛒კალათაში დამატება</button>
+        </div>
     </div>
-    <div class="product">
-        <img src="./imige/mk2.jpg" alt="ball" class="ball">
-        <p class="product_price" onclick="addToTotal(199)">199₾</p>
-    </div>
-    <div class="product">
-        <img src="./imige/mk3.jpg" alt="ball" class="ball">
-        <p class="product_price" onclick="addToTotal(199)">199₾</p>
-    </div>
-    <div class="product">
-        <img src="./imige/mk4.jpg" alt="ball" class="ball">
-        <p class="product_price" onclick="addToTotal(199)">199₾</p>
-    </div>
-    <div class="product">
-        <img src="./imige/mk5.jpg" alt="ball" class="ball">
-        <p class="product_price" onclick="addToTotal(199)">199₾</p>
-    </div>
-    <div class="product">
-        <img src="./imige/mk1.jpg" alt="ball" class="ball">
-        <p class="product_price" onclick="addToTotal(199)">199₾</p>
-    </div>
-    <div class="product">
-        <img src="./imige/mk3.jpg" alt="ball" class="ball">
-        <p class="product_price" onclick="addToTotal(199)">199₾</p>
-    </div>
-    <div class="product">
-        <img src="./imige/mk1.jpg" alt="ball" class="ball">
-        <p class="product_price" onclick="addToTotal(199)">199₾</p>
-    </div>
-    <div class="product">
-        <img src="./imige/mk1.jpg" alt="ball" class="ball">
-        <p class="product_price" onclick="addToTotal(199)">199₾</p>
-    </div>
-    <div class="product">
-        <img src="./imige/mk6.jpg" alt="ball" class="ball">
-        <p class="product_price" onclick="addToTotal(199)">199₾</p>
-    </div>
-    <div class="product">
-        <img src="./imige/mk2.jpg" alt="ball" class="ball">
-        <p class="product_price" onclick="addToTotal(199)">199₾</p>
-    </div>
-    <div class="product">
-        <img src="./imige/mk6.jpg" alt="ball" class="ball">
-        <p class="product_price" onclick="addToTotal(199)">199₾</p>
-    </div>
-</div>
 
-<div class="total-box">
-    <h2>ჯამი: <span id="total">0</span>₾</h2>
-</div>
 
-<footer>
-    <p>© 2024 ჩვენი კომპანია</p>
-</footer>
-
-<script>
-    let total = 0;
-    function addToTotal(price) {
-        total += price;
-        document.getElementById('total').innerText = total;
-    }
-</script>
+    <footer>
+        <p>© 2024 ჩვენი კომპანია</p>
+    </footer>
+    <script src="cart.js"></script>
+ 
 </body>
 </html>

@@ -72,8 +72,85 @@ h1.sport_name {
 }
 header {
     background-color: #007bff;
-    color: #fff;
+    color: #af1212;
     padding: 15px 0;
+}
+/* შეტყობინების სტილი */
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #4CAF50; /* მწვანე ფერი */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: none; /* დამალული მდგომარეობა */
+    z-index: 1000; /* სხვა ელემენტების წინ */
+    transition: opacity 0.5s; /* გადასვლის ეფექტი */
+    opacity: 1;
+}
+
+/* კალათის ხატულა მარჯვენა კუთხეში */
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000; /* სხვა ელემენტების წინ */
+    background: #f9f9f9; /* ფონდის ფერი */
+    border-radius: 5px; /* კუთხეების გადატეხვა */
+    padding: 10px; /* შიდა მარცვლები */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ჩრდილი */
+}
+
+
+
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.cart-item button {
+    margin-left: auto;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.total-box {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+.clear-cart-btn {
+    background-color: #FF5733; /* ფერი გასუფთავების ღილაკისთვის */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+.clear-cart-btn:hover {
+    background-color: #FF4500; /* hover ეფექტი */
 }
 
 nav ul {
@@ -127,4 +204,48 @@ h1{
 .total-box:hover {
     transform: scale(1.05);
     background-color: #457b9d;
+}
+/* კალათში დამატების ღილაკის სტილი */
+.add-to-cart-button {
+    background-color: #747774; 
+    color: white; /* თეთრი ტექსტი */
+    border: none; /* საზღვარი გამორთული */
+    padding: 10px 15px; /* შიდა მარცვლები */
+    border-radius: 5px; /* კუთხეების ორნამენტი */
+    cursor: pointer; /* მაუსის კურსორის შეცვლა */
+    transition: background-color 0.3s; /* ფერის ცვლილების ტრანზიცია */
+}
+
+/* ჰოვერი ეფექტი */
+.add-to-cart-button:hover {
+    background-color: red; /* წითელი ფონი ჰოვერის დროს */
+}
+.cart-actions {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.clear-cart, .checkout {
+    background-color: #e74c3c; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.clear-cart:hover, .checkout:hover {
+    background-color: #c0392b; 
+}
+
+.checkout {
+    background-color: #3498db; 
+}
+
+.checkout:hover {
+    background-color: #2980b9; 
 }
