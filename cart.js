@@ -96,8 +96,8 @@ function loadCartFromStorage() {
     updateCartCount(); 
 }
 
-// შეკვეთის ფუნქცია
+
 function checkout() {
-    alert('შეკვეთის განხორციელება შემდგომი ფუნქციონალითაა განსახორციელებელი.');
+    alert('შეკვვეთის გასაკეთებლად გაიარეთ რეგისტრაცია.');
     
 }

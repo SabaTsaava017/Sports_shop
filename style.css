@@ -126,7 +126,7 @@ footer {
 }
 
 .sports_div {
-    width: 45%; /* თითოეული დივი იღებს 45% სიგანეს, რომ ორ-ორად განლაგდეს */
+    width: 45%; 
     margin: 10px;
     text-align: center;
 }
