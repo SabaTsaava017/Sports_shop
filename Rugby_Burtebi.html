@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მთავარი გვერდი</title>
+    <link rel="stylesheet" href="formebi.css">
+</head>
+<body>
+    <div class="notification" id="notification"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="services.html">სერვისები</a></li>
+                <li><a href="registration.html">რეგისტრაცია</a></li>
+                
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="goToCart()">
+            🛒 <span id="cart-count">0</span> 
+        </div>
+    </header>
+    <main id="mainContent">
+        
+        <h1>კეთილი იყოს თქვენი მობრძანება ჩვენს სპორტულ მაღაზიაში</h1>
+    </main>
+<h2 class="NAMES">ბურთები</h2>
+<div class="Boots_product_div">
+    <div class="boots_product">
+        <p class="boots_name">Gilbert</p>
+        <img src="./imige/Rugby_ball(1).jpeg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Gilbert', 119, './imige/Rugby_ball(1).jpeg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name"></p>
+        <img src="./imige/Rugby_ball(1).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('/', 119, './imige/Rugby_ball(1).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Gilbert</p>
+        <img src="./imige/Rugby_ball(1).webp" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Gilbert', 119, './imige/Rugby_ball(1).webp')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Steeden</p>
+        <img src="./imige/Rugby_ball(2).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Steeden', 119, './imige/Rugby_ball(2).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Gilbert</p>
+        <img src="./imige/Rugby_ball(2).webp" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Gilbert', 119, './imige/Rugby_ball(2).webp')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Gilbert</p>
+        <img src="./imige/Rugby_ball(3).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Gilbert', 119, './imige/Rugby_ball(3).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Gilbert</p>
+        <img src="./imige/Rugby_ball(1).jpeg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Gilbert', 119, './imige/Rugby_ball(1).jpeg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name"></p>
+        <img src="./imige/Rugby_ball(1).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('/', 119, './imige/Rugby_ball(1).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Gilbert</p>
+        <img src="./imige/Rugby_ball(1).webp" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Gilbert', 119, './imige/Rugby_ball(1).webp')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Steeden</p>
+        <img src="./imige/Rugby_ball(2).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Steeden', 119, './imige/Rugby_ball(2).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Gilbert</p>
+        <img src="./imige/Rugby_ball(2).webp" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Gilbert', 119, './imige/Rugby_ball(2).webp')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Gilbert</p>
+        <img src="./imige/Rugby_ball(3).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Gilbert', 119, './imige/Rugby_ball(3).jpg')">🛒კალათაში დამატება</button>
+    </div>
+</main>
+</div>
+</main>
+
+    <footer>
+        <p>© 2024 ჩვენი კომპანია</p>
+    </footer>
+
+    <script src="cart.js"></script>
+
+
+</body>
+</html>
