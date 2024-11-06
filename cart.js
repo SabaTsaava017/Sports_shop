@@ -19,7 +19,7 @@ function addToCart(name, price, imgSrc) {
     total += price;
     saveCartToStorage();
     updateCartCount(); 
-    showNotification('${name} წარმატებით დაემატა კალათში!');
+    showNotification(' წარმატებით დაემატა კალათში!');
 }
 
 

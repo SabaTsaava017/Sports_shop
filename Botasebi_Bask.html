@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="formebi.css">
 </head>
 <body>
+    <div class="notification" id="notification"></div>
+
     <header>
         <nav>
             <ul>
@@ -14,93 +16,101 @@
                 <li><a href="about.html">ჩვენს შესახებ</a></li>
                 <li><a href="services.html">სერვისები</a></li>
                 <li><a href="registration.html">რეგისტრაცია</a></li>
+                
             </ul>
         </nav>
+        <div class="cart-icon" onclick="goToCart()">
+            🛒 <span id="cart-count">0</span> 
+        </div>
     </header>
-    <main>
+    <main id="mainContent">
         <h1>კეთილი იყოს თქვენი მობრძანება ჩვენს სპორტულ მაღაზიაში</h1>
     </main>
-
-<h2 class="NAMES">ბოტასები NIKE </h2>
-    <div class="T_shirt_product_div">
-        <div class="T_shirt_product">
-            <p class="club_name">NIKE</p>
-            <img src="./imige/basketball shoes (1).jpeg" alt="" class="T_shirt">
-            <p class="product_price" onclick="addToTotal(159)">159₾</p>
-        </div>
-        <div class="T_shirt_product">
-            <p class="club_name">NIKE</p>
-            <img src="./imige/basketball shoes (2).webp" alt="" class="T_shirt">
-            <p class="product_price" onclick="addToTotal(159)">159₾</p>
-        </div>
-        <div class="T_shirt_product">
-            <p class="club_name">NIKE</p>
-            <img src="./imige/basketball shoes (3).webp" alt="" class="T_shirt">
-            <p class="product_price" onclick="addToTotal(129)">129₾</p>
-        </div>
-        <div class="T_shirt_product">
-            <p class="club_name">NIKE</p>
-            <img src="./imige/basketball shoes (4).jpeg" alt="" class="T_shirt">
-            <p class="product_price" onclick="addToTotal(199)">199₾</p>
-        </div>
-        <div class="T_shirt_product">
-            <p class="club_name">NIKE</p>
-            <img src="./imige/basketball shoes (5).jpg" alt="" class="T_shirt">
-            <p class="product_price" onclick="addToTotal(159)">159₾</p>
-        </div>
-        <div class="T_shirt_product">
-            <p class="club_name">NIKE</p>
-            <img src="./imige/basketball shoes (1).jpeg" alt="" class="T_shirt">
-            <p class="product_price" onclick="addToTotal(119)">119₾</p>
-        </div>
-        <div class="T_shirt_product">
-            <p class="club_name">NIKE</p>
-            <img src="./imige/basketball shoes (2).webp" alt="" class="T_shirt">
-            <p class="product_price" onclick="addToTotal(259)">259₾</p>
-        </div>
-        <div class="T_shirt_product">
-            <p class="club_name">NIKE</p>
-            <img src="./imige/basketball shoes (3).webp" alt="" class="T_shirt">
-            <p class="product_price" onclick="addToTotal(139)">139₾</p>
-        </div>
-        <div class="T_shirt_product">
-            <p class="club_name">NIKE</p>
-            <img src="./imige/basketball shoes (4).jpeg" alt="" class="T_shirt">
-            <p class="product_price" onclick="addToTotal(129)">129₾</p>
-        </div>
-        
-        <div class="T_shirt_product">
-            <p class="club_name">NIKE</p>
-            <img src="./imige/basketball shoes (5).jpg" alt="" class="T_shirt">
-            <p class="product_price" onclick="addToTotal(119)">119₾</p>
-        </div>
-        <div class="T_shirt_product">
-            <p class="club_name">NIKE</p>
-            <img src="./imige/basketball shoes (1).jpeg" alt="" class="T_shirt">
-            <p class="product_price" onclick="addToTotal(149)">149₾</p>
-        </div>
-        <div class="T_shirt_product">
-            <p class="club_name">NIKE</p>
-            <img src="./imige/basketball shoes (2).webp" alt="" class="T_shirt">
-            <p class="product_price" onclick="addToTotal(199)">199₾</p>
-        </div>
+<h2 class="NAMES">ბოტასები</h2>
+<div class="Boots_product_div">
+    <div class="boots_product">
+        <p class="boots_name">Nike</p>
+        <img src="./imige/basketball shoes (1).jpeg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(119)">119₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Nike', 119, './imige/basketball shoes (1).jpeg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Nike</p>
+        <img src="./imige/basketball shoes (2).webp" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(129)">129₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Nike', 129, './imige/basketball shoes (2).webp')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Nike</p>
+        <img src="./imige/basketball shoes (3).webp" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(149)">149₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Nike', 149, './imige/basketball shoes (3).webp')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Nike</p>
+        <img src="./imige/basketball shoes (4).jpeg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Nike', 199, './imige/basketball shoes (4).jpeg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Nike</p>
+        <img src="./imige/basketball shoes (5).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(119)">119₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Nike', 119, './imige/basketball shoes (5).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Nike</p>
+        <img src="./imige/basketball shoes (1).jpeg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(129)">129₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Nike', 129, './imige/basketball shoes (1).jpeg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Nike</p>
+        <img src="./imige/basketball shoes (1).jpeg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(119)">119₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Nike', 119, './imige/basketball shoes (1).jpeg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Nike</p>
+        <img src="./imige/basketball shoes (2).webp" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(129)">129₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Nike', 129, './imige/basketball shoes (2).webp')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Nike</p>
+        <img src="./imige/basketball shoes (3).webp" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(149)">149₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Nike', 149, './imige/basketball shoes (3).webp')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Nike</p>
+        <img src="./imige/basketball shoes (4).jpeg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(199)">199₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Nike', 199, './imige/basketball shoes (4).jpeg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Nike</p>
+        <img src="./imige/basketball shoes (5).jpg" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(119)">119₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Nike', 119, './imige/basketball shoes (5).jpg')">🛒კალათაში დამატება</button>
+    </div>
+    <div class="boots_product">
+        <p class="boots_name">Nike</p>
+        <img src="./imige/basketball shoes (3).webp" alt="boots" class="boots">
+        <p class="product_price" onclick="addToTotal(149)">149₾</p>
+        <button class="add-to-cart-button" onclick="addToCart('Nike', 149, './imige/basketball shoes (3).webp')">🛒კალათაში დამატება</button>
     </div>
 
-    <div class="total-box">
-        <h2>ჯამი: <span id="total">0</span>₾</h2>
-    </div>
+</main>
+</div>
+</main>
 
     <footer>
         <p>© 2024 ჩვენი კომპანია</p>
     </footer>
 
-    <script>
-        let total = 0;
-        function addToTotal(price) {
-            total += price;
-            document.getElementById('total').innerText = total;
-        }
-    </script>
+    <script src="cart.js"></script>
+
 
 </body>
 </html>
