@@ -71,7 +71,7 @@ h1.sport_name {
     
 }
 header {
-    background-color: #007bff;
+    background-color: blue;
     color: #af1212;
     padding: 15px 0;
 }
@@ -178,7 +178,7 @@ nav ul li a:hover {
     color: #ffdd57;
 }
 footer {
-    background-color: #007bff;
+    background-color: blue;
     color: #fff;
     text-align: center;
     padding: 15px 0;
@@ -251,3 +251,4 @@ h1{
 .checkout:hover {
     background-color: #2980b9; 
 }
+

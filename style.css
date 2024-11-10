@@ -14,6 +14,7 @@ header {
     background-color: blue;
     color: #fff;
     padding: 15px 0;
+    padding-left: 300px;
 }
 
 nav ul {
@@ -132,6 +133,28 @@ footer {
 }
 .rugby_img{
     width: 650px;
+}
+
+.search-container {
+    display: inline-block;
+    margin-left: auto;
+}
+#search-bar {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#search-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sport_name{
+    padding-left: 700px;
 }
 
 /* Media Queries for Mobile */

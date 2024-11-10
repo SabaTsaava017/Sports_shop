@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>მთავარი გვერდი</title>
     <link rel="stylesheet" href="style.css">
-
-    
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav style="display: flex; align-items: center;">
+            <ul style="flex-grow: 1; display: flex; list-style: none; padding: 0; margin: 0;">
                 <li><a href="index.html">მთავარი</a></li>
                 <li><a href="about.html">ჩვენს შესახებ</a></li>
                 <li><a href="services.html">სერვისები</a></li>
                 <li><a href="Size.html">გაიგე ზომა მარტივად</a></li>
                 <li><a href="registration.html">რეგისტრაცია</a></li>
             </ul>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="შეიყვანეთ სპორტი და პროდუქტი...">
+                <button id="search-button" onclick="navigatePage()">ძებნა</button>
+            </div>
         </nav>
     </header>
     <main>
@@ -93,5 +95,7 @@
     <footer>
         <p>© 2024 ჩვენი კომპანია</p>
     </footer>
+
+    <script src="search.js"></script>
 </body>
 </html>
