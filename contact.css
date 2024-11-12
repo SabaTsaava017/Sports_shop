@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: #1B1F3B;
     color: #fff;
     padding: 15px 0;
 }
@@ -81,7 +81,7 @@ button {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #007bff;
+    background-color: #1B1F3B;
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -104,7 +104,7 @@ button:hover {
 
 
 footer {
-    background-color: #007bff;
+    background-color: #1B1F3B;
     color: #fff;
     text-align: center;
     padding: 15px 0;

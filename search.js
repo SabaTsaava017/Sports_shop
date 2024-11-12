@@ -17,17 +17,17 @@
                     "მაისურები": "formebi.html",
                     "ბურთები": "burtebi.html",
                     "ბუცები": "bucebi.html",
-                    "მეკარის ხელთათმანები": "football-gloves.html"
+                    "მეკარის ხელთათმანები": "mekare.html"
                 },
                 "კალათბურთი": {
-                    "მაისურები": "basketball-shirts.html",
-                    "ბოტასები": "basketball-shoes.html",
-                    "ბურთები": "basketball-balls.html"
+                    "მაისურები": "formebi_Bask.html",
+                    "ბოტასები": "Botasebi_Bask.html",
+                    "ბურთები": "basketball_ball.html"
                 },
                 "რაგბი": {
-                    "მაისურები": "rugby-shirts.html",
-                    "ბურთები": "rugby-balls.html",
-                    "ბუცები": "rugby-boots.html"
+                    "მაისურები": "Rugby_T-shirts.html",
+                    "ბურთები": "Rugby-Burtebi.html",
+                    "ბუცები": "Rugby_bucebi.html"
                 },
                 "ბოქსი": {
                     "ბოქსის გრუშები": "boxing-bags.html",
@@ -61,3 +61,11 @@
                 alert("გთხოვთ, ჩაწეროთ სპორტის სახელი ან სპორტისა და პროდუქტის დასახელება.");
             }
         }
+
+
+
+
+
+
+
+        

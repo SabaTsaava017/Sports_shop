@@ -8,13 +8,18 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav style="display: flex; align-items: center;">
+            <ul style="flex-grow: 1; display: flex; list-style: none; padding: 0; margin: 0;">
                 <li><a href="index.html">მთავარი</a></li>
                 <li><a href="about.html">ჩვენს შესახებ</a></li>
                 <li><a href="services.html">სერვისები</a></li>
+                <li><a href="Size.html">გაიგე ზომა მარტივად</a></li>
                 <li><a href="registration.html">რეგისტრაცია</a></li>
             </ul>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="შეიყვანეთ სპორტი და პროდუქტი...">
+                <button id="search-button" onclick="navigatePage()">ძებნა</button>
+            </div>
         </nav>
     </header>
     <main>
@@ -25,17 +30,17 @@
     <div class="sports_container">
         <div class="sports_div">
             <a href="formebi_Bask.html" class="name">
-                <h2>მაისურები</h2>
+                <h2 class="sports-NAME">მაისურები</h2>
             </a>
         </div>
         <div class="sports_div">
             <a href="Botasebi_Bask.html" class="name">
-                <h2>ბოტასები</h2>
+                <h2 class="sports-NAME">ბოტასები</h2>
             </a>
         </div>
         <div class="sports_div">
             <a href="basketball_ball.html" class="name">
-                <h2>ბურთები</h2>
+                <h2 class="sports-NAME">ბურთები</h2>
             </a>
         </div>
         
@@ -44,6 +49,7 @@
     <footer>
         <p>© 2024 ჩვენი კომპანია</p>
     </footer>
+    <script src="search.js"></script>
 
 </body>
 </html>
