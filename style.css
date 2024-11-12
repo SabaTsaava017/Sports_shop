@@ -11,10 +11,11 @@ body {
     color:#007bff ;
 }
 header {
-    background-color: blue;
+    background-color:#1B1F3B ;
     color: #fff;
     padding: 15px 0;
-    padding-left: 300px;
+    padding-left: 350px;
+    
 }
 
 nav ul {
@@ -156,6 +157,145 @@ footer {
 .sport_name{
     padding-left: 700px;
 }
+.sports-NAME{
+    color: #e6b800;
+}
+
+
+footer {
+    background-color: #1B1F3B;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-links > div {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: left;
+    max-width: 300px;
+}
+
+.footer-links h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #ffcc00; /* Highlight color for section titles */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+}
+
+.contact-info p,
+.newsletter form {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #e6b800;
+}
+
+.footer-social {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-social a {
+    color: #e6b800;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+.footer-terms p {
+    font-size: 0.85em;
+    margin-top: 20px;
+}
+
+.footer-terms a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-terms a:hover {
+    color: #fff;
+}
+
+footer p {
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* Prevent horizontal scroll */
+body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
