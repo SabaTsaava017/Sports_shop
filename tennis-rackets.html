@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ბურთების კატეგორია</title>
+    <link rel="stylesheet" href="formebi.css">
+</head>
+<body>
+    <div class="notification" id="notification"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="services.html">სერვისები</a></li>
+                <li><a href="registration.html">რეგისტრაცია</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="goToCart()">
+            🛒 <span id="cart-count">0</span> 
+        </div>
+    </header>
+
+    <main>
+        <h2 class="NAMES">ჩოგბურთის ჩოგნები</h2>
+        <div class="product_div">
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chognebi(1).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(459)">459₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 459, './imige/chognebi(1).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chognebi(1).webp" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(369)">369₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 369, './imige/chognebi(1).webp')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chognebi(2).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(229)">229₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 229, './imige/chognebi(2).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chognebi(2).webp" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(519)">519₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 519, './imige/chognebi(2).webp')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chognebi(3).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(289)">289₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 289, './imige/chognebi(3).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chognebi(4).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(379)">379₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 379, './imige/chognebi(4).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chognebi(1).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(459)">459₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 459, './imige/chognebi(1).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chognebi(1).webp" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(369)">369₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 369, './imige/chognebi(1).webp')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chognebi(2).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(229)">229₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 229, './imige/chognebi(2).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chognebi(2).webp" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(519)">519₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 519, './imige/chognebi(2).webp')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chognebi(3).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(289)">289₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 289, './imige/chognebi(3).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name"></p>
+                <img src="./imige/chognebi(4).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(379)">379₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 379, './imige/chognebi(4).jpg')">🛒კალათში დამატება</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 ჩვენი კომპანია</p> 
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
