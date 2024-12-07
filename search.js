@@ -39,7 +39,7 @@
                 "ჩოგბურთი": {
                     "ჩოგნები": "tennis-rackets.html",
                     "ბურთები": "tennis-balls.html",
-                    "ჩოგბურთის ბადე": "tennis-nets.html"
+                    
                 }
             };
 
