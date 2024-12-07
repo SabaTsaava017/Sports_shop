@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ბურთების კატეგორია</title>
+    <link rel="stylesheet" href="formebi.css">
+</head>
+<body>
+    <div class="notification" id="notification"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">მთავარი</a></li>
+                <li><a href="about.html">ჩვენს შესახებ</a></li>
+                <li><a href="services.html">სერვისები</a></li>
+                <li><a href="registration.html">რეგისტრაცია</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="goToCart()">
+            🛒 <span id="cart-count">0</span> 
+        </div>
+    </header>
+
+    <main>
+        <h2 class="NAMES">ჩოგბურთის ჩოგნები</h2>
+        <div class="product_div">
+            <div class="product">
+                <p class="ball_name">10 ცალი</p>
+                <img src="./imige/tennis ball(1).jpeg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(100)">100₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 100, './imige/tennis ball(1).jpeg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name">10 ცალი</p>
+                <img src="./imige/tennis ball(1).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(120)">120₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 120, './imige/tennis ball(1).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name">10 ცალი</p>
+                <img src="./imige/tennis ball(1).png" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(110)">110₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 110, './imige/tennis ball(1).png')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name">10 ცალი</p>
+                <img src="./imige/tennis ball(1).webp" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(125)">125₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 125, './imige/tennis ball(1).webp')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name">10 ცალი</p>
+                <img src="./imige/tennis ball(2).jpg" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(95)">95₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 95, './imige/tennis ball(2).jpg')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product">
+                <p class="ball_name">10 ცალი</p>
+                <img src="./imige/tennis ball(2).webp" alt="ball" class="ball">
+                <p class="product_price" onclick="addToTotal(115)">115₾</p>
+                <button class="add-to-cart-button" onclick="addToCart('', 115, './imige/tennis ball(2).webp')">🛒კალათში დამატება</button>
+            </div>
+            <div class="product_div">
+                <div class="product">
+                    <p class="ball_name">10 ცალი</p>
+                    <img src="./imige/tennis ball(1).jpeg" alt="ball" class="ball">
+                    <p class="product_price" onclick="addToTotal(100)">100₾</p>
+                    <button class="add-to-cart-button" onclick="addToCart('', 100, './imige/tennis ball(1).jpeg')">🛒კალათში დამატება</button>
+                </div>
+                <div class="product">
+                    <p class="ball_name">10 ცალი</p>
+                    <img src="./imige/tennis ball(1).jpg" alt="ball" class="ball">
+                    <p class="product_price" onclick="addToTotal(120)">120₾</p>
+                    <button class="add-to-cart-button" onclick="addToCart('', 120, './imige/tennis ball(1).jpg')">🛒კალათში დამატება</button>
+                </div>
+                <div class="product">
+                    <p class="ball_name">10 ცალი</p>
+                    <img src="./imige/tennis ball(1).png" alt="ball" class="ball">
+                    <p class="product_price" onclick="addToTotal(110)">110₾</p>
+                    <button class="add-to-cart-button" onclick="addToCart('', 110, './imige/tennis ball(1).png')">🛒კალათში დამატება</button>
+                </div>
+                <div class="product">
+                    <p class="ball_name">10 ცალი</p>
+                    <img src="./imige/tennis ball(1).webp" alt="ball" class="ball">
+                    <p class="product_price" onclick="addToTotal(125)">125₾</p>
+                    <button class="add-to-cart-button" onclick="addToCart('', 125, './imige/tennis ball(1).webp')">🛒კალათში დამატება</button>
+                </div>
+                <div class="product">
+                    <p class="ball_name">10 ცალი</p>
+                    <img src="./imige/tennis ball(2).jpg" alt="ball" class="ball">
+                    <p class="product_price" onclick="addToTotal(95)">95₾</p>
+                    <button class="add-to-cart-button" onclick="addToCart('', 95, './imige/tennis ball(2).jpg')">🛒კალათში დამატება</button>
+                </div>
+                <div class="product">
+                    <p class="ball_name">10 ცალი</p>
+                    <img src="./imige/tennis ball(2).webp" alt="ball" class="ball">
+                    <p class="product_price" onclick="addToTotal(115)">115₾</p>
+                    <button class="add-to-cart-button" onclick="addToCart('', 115, './imige/tennis ball(2).webp')">🛒კალათში დამატება</button>
+                </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 ჩვენი კომპანია</p> 
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
